@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/kab_lang" android:title="Taqbaylit"/>
+    <item android:id="@+id/ar_lang" android:title="العربية"/>
+    <item android:id="@+id/fr_lang" android:title="Français"/>
+    <item android:id="@+id/en_lang" android:title="English"/>
+</menu>
