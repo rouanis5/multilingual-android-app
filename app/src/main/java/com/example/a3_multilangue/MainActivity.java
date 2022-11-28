@@ -25,8 +25,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView txtView = findViewById(R.id.textView);
+        TextView txtView = findViewById(R.id.textView),
+            linkView = findViewById(R.id.linkView);
         registerForContextMenu(txtView);
+
+        linkView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, WebActivity.class);
+                startActivity(i);
+            }
+        });
     }
 
     @Override
